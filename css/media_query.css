@@ -2,3 +2,23 @@
 small desktop (screen md) - 1100px
 tablet  (screen s)  - 700px
 phone  (screen xs)  - 600px */
+
+@media  screen and (max-width: 600px) {
+
+    :root{
+        --aside-dimension: auto;
+    }
+
+    #sidebar .logo img:first-of-type,
+    #sidebar span,
+    #sidebar .playlist-nav{
+        display: none;
+    }
+
+    #sidebar .logo img:nth-of-type(2){
+        display: block;
+        /* DEBUG */
+        width: 50px;
+    }    
+    
+}
