@@ -33,6 +33,7 @@ html{
     --checked-color: #ADFF2F;
     --player-bar: #5A5A5A;
     --player-listen-bar: #C1C1C1;
+    --player-left: #c9c9c9;
 
     /* Dimension */
     --aside-dimension: 200px;

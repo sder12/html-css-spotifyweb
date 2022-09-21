@@ -24,8 +24,7 @@ main {
 
 footer {
   height: var(--footer-heigth);
-  /* DEBUG */
-  background-color: lightcoral;
+  background-color: var(--player-color);
 }
 
 /* MAIN */
@@ -130,24 +129,26 @@ aside #sidebar-bottom {
 
 /* -------------------------------- */
 /* FOOTER - CTA*/
+/* DEBUG */
+/* #music-player,
+#music-player-top,
+#music-player-bottom,
+#played-volume,#played-song, #played-song > *  {  
+  border: var(--white-border);
+} */
+
 #call-to-action {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 .4em;
 }
 /* Footer Left Played song */
 #played-song {
   display: flex;
   align-items: center;
   gap: 0.5em;
-  /* DEBUG */
-  background-color: lightsteelblue;
 }
-#played-song > * {
-  /* DEBUG */
-  border: var(--black-border);
-}
-
 #played-song img {
   height: 60px;
 }
@@ -157,36 +158,27 @@ aside #sidebar-bottom {
 #played-song .played-icon i {
   margin-left: 0.5em;
 }
+#played-song i,
+#played-song span{
+    color: var(--player-left);
+}
+#played-song span{    
+    font-size: .8rem;
+    font-weight: 600;
+}
+
 
 /* Footer Center Music Player */
-#music-player {
-  /* DEBUG */
-  background-color: lightgreen;
-}
-#music-player-top {
-  /* DEBUG */
-  background-color: rgb(59, 89, 59);
-}
-#music-player-bottom {
-    padding-top: .3em;
-  /* DEBUG */
-  background-color: rgb(0, 50, 0);
-}
-
-/* Footer Right Played Volume */
-#played-volume {
-  height: var(--footer-heigth);
-  line-height: var(--footer-heigth);
-  /* DEBUG */
-  background-color: lightpink;
-}
-
 #music-player i,
-#played-volume i {
+#played-volume i,
+#played-song .played-text span:first-of-type {
   color: white;
 }
+#music-player-top{
+    padding: 0 4em;
+}
 #music-player i {
-  margin: 0 1em;
+  margin: 0 .4em;
 }
 #music-player-bottom {
   display: flex;
@@ -199,18 +191,22 @@ aside #sidebar-bottom {
 }
 #music-player .hr-player {
   align-self: center;
-  width: 60%;
+  width: 70%;
 }
 #music-player-top .fa-play {
   border: 2px solid white;
   border-radius: 50%;
-  padding: 1em;
+  padding: .7em;
 }
 
+/* Footer Right Played Volume */
+#played-volume {
+  height: var(--footer-heigth);
+  line-height: var(--footer-heigth);
+}
 #played-volume i {
   margin-right: 1em;
 }
-
 #played-volume .hr-player {
   width: 100px;
 }

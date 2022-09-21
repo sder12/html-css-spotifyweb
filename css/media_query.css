@@ -3,8 +3,40 @@ small desktop (screen md) - 1100px
 tablet  (screen s)  - 700px
 phone  (screen xs)  - 600px */
 
+@media  screen and (max-width: 700px) {
+
+    /* FOOTER */
+    .played-icon{
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+    }
+    #played-song img {
+        height: 40px;
+      }
+    #music-player-bottom {
+        justify-content: center;
+        gap: 1em;
+      }
+    #music-player .hr-player {
+        width: 50%;        
+      }
+      #music-player i {
+        margin: 0 .2em;
+      }
+
+    #played-volume i {
+        margin-right: .3em;
+      }
+
+    #played-volume .hr-player{
+        width: 60px;
+    }
+}
+
 @media  screen and (max-width: 600px) {
 
+    /* SIDEBAR */
     :root{
         --aside-dimension: 30px;
     }
