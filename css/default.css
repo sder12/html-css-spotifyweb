@@ -22,8 +22,7 @@ html{
     /* Colors */
     --main-color: #141922;
     --player-color: #282828;
-    /* DEBUG nb trasparent*/
-    --upgrade-color: #080B12;
+    --upgrade-color: #080b12b0;
     /* Text */
     --icon-side-color: #D2D2D2;
     --create-playlist-color: #A3A3A3;

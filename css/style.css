@@ -30,6 +30,7 @@ footer {
 /* MAIN */
 main {
   position: relative;
+  background-color: var(--main-color);
 }
 #upgrade {
   position: fixed;
@@ -38,15 +39,14 @@ main {
   height: var(--upgrade-height);
   width: calc(100% - var(--aside-dimension));
   z-index: 999;
-  /* DEBUG */
-  background-color: rgb(155, 155, 155);
+  background-color: var(--upgrade-color);
+  padding-right: 2em;
 }
 
 #main-nav {
   margin-top: var(--upgrade-height);
-  /* DEBUG */
-  /* height: 5.5vh; */
-  background-color: lightgoldenrodyellow;
+  /* DEBUG */  
+  background-color: var(--main-color);
 }
 
 #recently-played {
@@ -89,20 +89,37 @@ aside #sidebar-bottom {
 /* -------------------------------- */
 /* MAIN ------------*/
 /* UPGRADE */
-#upgrade div {
-  text-align: right;
+#upgrade{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+#upgrade .btn {
+  color: white;
+  font-size: .8rem;
+  font-weight: 600;
+  border: var(--white-border);
+  padding: 0.7em 2.4em;
+  border-radius: 25px;
+}
+
 /* NAVIGATION-------- */
 #main-nav ul {
   text-align: center;
 }
 #main-nav ul li {
   display: inline-block;
-  /* DEBUG */
   margin: 0.2em 1em;
 }
 #main-nav ul a {
   text-transform: uppercase;
+}
+#main-nav{
+  padding: 1em 0;
+  color: var(--main-grey-txt);
+  font-weight: bold;
+  font-size: .8rem;
 }
 
 /* RECENTLY PLAYED */
@@ -141,7 +158,7 @@ aside #sidebar-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 .4em;
+  padding: 0 0.4em;
 }
 /* Footer Left Played song */
 #played-song {
@@ -159,14 +176,13 @@ aside #sidebar-bottom {
   margin-left: 0.5em;
 }
 #played-song i,
-#played-song span{
-    color: var(--player-left);
+#played-song span {
+  color: var(--player-left);
 }
-#played-song span{    
-    font-size: .8rem;
-    font-weight: 600;
+#played-song span {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
-
 
 /* Footer Center Music Player */
 #music-player i,
@@ -174,11 +190,11 @@ aside #sidebar-bottom {
 #played-song .played-text span:first-of-type {
   color: white;
 }
-#music-player-top{
-    padding: 0 4em;
+#music-player-top {
+  padding: 0 4em;
 }
 #music-player i {
-  margin: 0 .4em;
+  margin: 0 0.4em;
 }
 #music-player-bottom {
   display: flex;
@@ -196,7 +212,7 @@ aside #sidebar-bottom {
 #music-player-top .fa-play {
   border: 2px solid white;
   border-radius: 50%;
-  padding: .7em;
+  padding: 0.7em;
 }
 
 /* Footer Right Played Volume */
