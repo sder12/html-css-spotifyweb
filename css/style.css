@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.aside-main-flex {
+  display: flex;
+}
+
+aside {
+  width: 17%;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  /* DEBUG */
+  background-color: lightgray;
+}
+
+main {
+  width: 83%;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+  /* DEBUG */
+  background-color: lightblue;
+}
+
+footer {
+  height: 80px;
+  background-color: lightcoral;
+}
