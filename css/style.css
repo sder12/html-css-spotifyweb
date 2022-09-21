@@ -8,22 +8,22 @@
 
 aside {
   width: var(--aside-dimension);
-  height: calc(100vh - 80px);
+  height: calc(100vh - var(--footer-heigth));
   overflow: hidden;
   /* DEBUG */
   background-color: lightgray;
 }
 
 main {
-  width: 83%;
-  height: calc(100vh - 80px);
+  width: calc(100% - var(--aside-dimension));
+  height: calc(100vh - var(--footer-heigth));
   overflow-y: scroll;
   /* DEBUG */
   background-color: lightblue;
 }
 
 footer {
-  height: 80px;
+  height: var(--footer-heigth);
   /* DEBUG */
   background-color: lightcoral;
 }
@@ -37,6 +37,7 @@ main {
   top: 0;
   left: var(--aside-dimension);
   height: var(--upgrade-height);
+  width: calc(100% - var(--aside-dimension));
   z-index: 999;
   /* DEBUG */
   background-color: rgb(155, 155, 155);
@@ -45,7 +46,7 @@ main {
 #main-nav {
   margin-top: var(--upgrade-height);
   /* DEBUG */
-  height: 5.5vh;
+  /* height: 5.5vh; */
   background-color: lightgoldenrodyellow;
 }
 
@@ -63,4 +64,79 @@ main {
   /* DEBUG */
   height: 32vh;
   background-color: rgb(251, 255, 148);
+}
+
+/* -------------------------------- */
+/* SIDEBAR */
+aside {
+  position: relative;
+}
+
+aside #sidebar-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: aqua;
+}
+
+/* -------------------------------- */
+/* MAIN ------------*/
+/* UPGRADE */
+#upgrade div {
+  text-align: right;
+}
+/* NAVIGATION-------- */
+#main-nav ul {
+    text-align: center;
+}
+#main-nav ul li{
+    display: inline-block;
+    /* DEBUG */
+    margin: .2em 1em;
+}
+#main-nav ul a{
+    text-transform: uppercase;
+}
+
+/* RECENTLY PLAYED */
+
+/* CREATE FOR U */
+/* POPULAR ARTIST */
+
+/* -------------------------------- */
+/* FOOTER - CTA*/
+#call-to-action {
+  display: flex;
+  justify-content: space-between;
+}
+/* Footer Left Played song */
+#played-song {
+  height: var(--footer-heigth);
+  line-height: var(--footer-heigth);
+  /* DEBUG */
+  background-color: lightsteelblue;
+}
+
+/* Footer Center Music Player */
+#music-player {
+  height: var(--footer-heigth);
+  line-height: calc((var(--footer-heigth)) / 2);
+  /* DEBUG */
+  background-color: lightgreen;
+}
+#music-player-top {
+  /* DEBUG */
+  background-color: rgb(59, 89, 59);
+}
+#music-player-bottom {
+  /* DEBUG */
+  background-color: rgb(0, 50, 0);
+}
+
+/* Footer Right Played Volume */
+#played-volume {
+  height: var(--footer-heigth);
+  line-height: var(--footer-heigth);
+  /* DEBUG */
+  background-color: lightpink;
 }

@@ -35,8 +35,9 @@ html{
     --player-listen-bar: #C1C1C1;
 
     /* Dimension */
-    --aside-dimension: 17%;
+    --aside-dimension: 200px;
     --upgrade-height: 9vh;
+    --footer-heigth: 80px;
 }
 
 
