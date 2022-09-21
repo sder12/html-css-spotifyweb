@@ -6,7 +6,7 @@ phone  (screen xs)  - 600px */
 @media  screen and (max-width: 600px) {
 
     :root{
-        --aside-dimension: auto;
+        --aside-dimension: 30px;
     }
 
     #sidebar .logo img:first-of-type,
