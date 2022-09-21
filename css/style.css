@@ -99,9 +99,26 @@ aside #sidebar-bottom {
 }
 
 /* RECENTLY PLAYED */
+.col{
+    display: flex;
+    gap: 1em;
+}
+.cover{
+    /* DEBUG */
+    width: 100px;
+    height: 170px;
+    background-color: red;
+    border: var( --black-border);
+}
+.cover-caption{
+    text-align: center;
+}
 
 /* CREATE FOR U */
 /* POPULAR ARTIST */
+#popular-artist .cover img{
+    border-radius: 50%;
+}
 
 /* -------------------------------- */
 /* FOOTER - CTA*/
