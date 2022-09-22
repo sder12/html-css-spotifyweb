@@ -44,21 +44,14 @@ main {
   background-color: var(--main-color);
 }
 
-#recently-played {
-  /* DEBUG */
-  height: 37vh;
-  background-color: rgb(220, 255, 208);
+#recently-played, #create-for-u, #popular-artist  {
+  width: 100%;  
 }
-#create-for-u {
-  /* DEBUG */
-  height: 32vh;
-  background-color: rgb(148, 205, 255);
+
+#recently-played, #create-for-u, #popular-artist{
+padding: 1em 1em;
 }
-#popular-artist {
-  /* DEBUG */
-  height: 32vh;
-  background-color: rgb(251, 255, 148);
-}
+
 
 /* -------------------------------- */
 /* SIDEBAR */
@@ -185,19 +178,54 @@ main {
 }
 
 /* RECENTLY PLAYED */
+
 .col {
   display: flex;
-  gap: 1em;
+  gap: 1em;  
 }
-.cover {
-  /* DEBUG */
-  width: 100px;
-  height: 170px;
-  background-color: red;
-  border: var(--black-border);
+.col div{
+  width: calc(90% / 6);
 }
-.cover-caption {
-  text-align: center;
+
+#recently-played h2,
+#create-for-u p:first-of-type,
+#popular-artist p:first-of-type{
+  margin-bottom: 1em;
+}
+#create-for-u p:first-of-type,
+#popular-artist p:first-of-type{
+  margin-top: .5em;
+}
+
+/* Typo */
+#recently-played,
+#create-for-u,
+#popular-artist{
+ color: white;
+}
+#recently-played h2,
+#create-for-u h2,
+#popular-artist h2{
+ font-size: 1.4rem;
+}
+#recently-played h3,
+#create-for-u h3,
+#popular-artist h3{
+ font-size: 1rem;
+}
+
+#create-for-u p:first-of-type,
+#popular-artist  p:first-of-type{
+ color: rgb(129, 129, 129);
+ font-size: .9rem;
+ font-weight: 600;
+}
+#recently-played .cover-caption p,
+#create-for-u .cover-caption p,
+#popular-artist .cover-caption p{
+ color: rgb(129, 129, 129);
+ font-weight: 700;
+ font-size: .8rem;
 }
 
 /* CREATE FOR U */

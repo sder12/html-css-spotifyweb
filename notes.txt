@@ -1,6 +1,0 @@
--potevo inserire la sidebar nel main 
- 1. dividere il layout in footer e main
- 2 dividere il main in sidebar e main-content > li affianco con flex
-
- - sidebar with 250px
- -:root sidebar-xs 80px
