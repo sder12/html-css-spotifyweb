@@ -1,0 +1,60 @@
+
+/* SIDEBAR */
+aside{
+    position: relative;
+}
+#sidebar-top .side-nav ul li:first-child{
+    border-left: 3px solid #ADFF2F;  
+} 
+
+#sidebar .side-nav ul li:hover span{
+    color: white;
+}
+
+#sidebar .playlist-nav ul li:hover a{
+    color: white;
+}
+#sidebar .playlist-nav ul li:nth-of-type(2):hover span{
+    background-color: white;
+}
+#sidebar-bottom .install:hover a{
+    color: white;
+}
+
+/* MAIN */
+#upgrade:hover .btn{
+    transform: scale(1.1);
+}
+
+#main-nav ul li:hover a{
+    color: white;
+}
+
+#main-nav ul li .checked-underline{  
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #ADFF2F ;
+    text-underline-position: under;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;    
+}
+
+/* cover */
+
+#create-for-u .cover:first-child:hover img{
+    filter: grayscale(60%);
+}
+
+
+/* FOOTER */
+#played-song .played-text:hover span:nth-of-type(2){
+    text-decoration: underline;
+}
+#played-song .played-icon a:nth-of-type(1):hover .fa-heart,
+#played-song .played-icon a:nth-of-type(2):hover .fa-folder{
+    color: white;
+    font-weight: 600;
+}
+#played-song:first-child:hover img{
+    filter: grayscale(1);
+}
