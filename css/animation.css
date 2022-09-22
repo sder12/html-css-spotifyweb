@@ -40,10 +40,20 @@ aside{
 }
 
 /* cover */
-
-#create-for-u .cover:first-child:hover img{
+#recently-played .cover:first-child:hover img,
+#recently-played .cover:nth-of-type(2):hover img,
+#recently-played .cover:nth-of-type(3):hover img,
+#recently-played .cover:nth-of-type(4):hover img,
+#recently-played .cover:nth-of-type(5):hover img,
+#recently-played .cover:last-child:hover img, 
+#create-for-u .cover:first-child:hover img,
+#create-for-u .cover:last-child:hover img,
+#popular-artist .cover:first-child:hover img,
+#popular-artist .cover:last-child:hover img{
     filter: grayscale(60%);
+    filter: blur(4px);   
 }
+
 
 
 /* FOOTER */
@@ -58,3 +68,11 @@ aside{
 #played-song:first-child:hover img{
     filter: grayscale(1);
 }
+
+#played-volume a:nth-of-type(1):hover .fa-list-ul,
+#played-volume a:nth-of-type(2):hover .fa-desktop,
+#played-volume a:nth-of-type(3):hover .fa-volume-high{
+    color: var(--checked-color);
+}
+
+
