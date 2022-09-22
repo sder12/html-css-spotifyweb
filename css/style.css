@@ -16,7 +16,7 @@ main {
   width: calc(100% - var(--aside-dimension));
   height: calc(100vh - var(--footer-heigth));
   overflow-y: scroll;
-  background-color: black;
+  background-color: var(--main-color);
 }
 footer {
   width: 100%;
@@ -24,7 +24,7 @@ footer {
   background-color: var(--player-color);
 }
 
-/* MAIN */
+/* MAIN layout */
 main {
   position: relative;
   background-color: var(--main-color);
@@ -43,16 +43,11 @@ main {
   margin-top: var(--upgrade-height);
   background-color: var(--main-color);
 }
-
 #recently-played, #create-for-u, #popular-artist  {
   width: 100%;  
 }
 
-#recently-played, #create-for-u, #popular-artist{
-padding: 1em 1em;
-}
-
-
+/* -------------------------------- */
 /* -------------------------------- */
 /* SIDEBAR */
 #sidebar{
@@ -177,27 +172,38 @@ padding: 1em 1em;
   font-size: .8rem;
 }
 
-/* RECENTLY PLAYED */
-
+/* COVER ALBUM ---------*/
 .col {
   display: flex;
   gap: 1em;  
 }
-.col div{
+.col .cover{
   width: calc(90% / 6);
 }
-
+#popular-artist .cover img {
+  border-radius: 50%;
+}
+#recently-played, #create-for-u, #popular-artist{
+  padding: 1em 1em;
+  }
+/* Spacing */
 #recently-played h2,
 #create-for-u p:first-of-type,
 #popular-artist p:first-of-type{
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
 }
 #create-for-u p:first-of-type,
 #popular-artist p:first-of-type{
   margin-top: .5em;
 }
+.cover-caption h3{
+  padding: .3em 0;
+}
 
 /* Typo */
+.cover-caption{
+  text-align: center;
+}
 #recently-played,
 #create-for-u,
 #popular-artist{
@@ -214,35 +220,29 @@ padding: 1em 1em;
  font-size: 1rem;
 }
 
+#recently-played .cover-caption p,
+#create-for-u .cover-caption p,
+#popular-artist .cover-caption p,
 #create-for-u p:first-of-type,
 #popular-artist  p:first-of-type{
- color: rgb(129, 129, 129);
+  color: var(--main-grey-txt);
+}
+#create-for-u p:first-of-type,
+#popular-artist  p:first-of-type{
  font-size: .9rem;
  font-weight: 600;
 }
 #recently-played .cover-caption p,
 #create-for-u .cover-caption p,
 #popular-artist .cover-caption p{
- color: rgb(129, 129, 129);
  font-weight: 700;
  font-size: .8rem;
 }
 
-/* CREATE FOR U */
-/* POPULAR ARTIST */
-#popular-artist .cover img {
-  border-radius: 50%;
-}
 
 /* -------------------------------- */
 /* FOOTER - CTA*/
-/* DEBUG */
-/* #music-player,
-#music-player-top,
-#music-player-bottom,
-#played-volume,#played-song, #played-song > *  {  
-  border: var(--white-border);
-} */
+
 
 #call-to-action {
   display: flex;
@@ -318,3 +318,12 @@ padding: 1em 1em;
   color: white;
   width: 100px;
 }
+
+
+/* DEBUG */
+/* #music-player,
+#music-player-top,
+#music-player-bottom,
+#played-volume,#played-song, #played-song > *  {  
+  border: var(--white-border);
+} */
