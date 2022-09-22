@@ -5,6 +5,7 @@ phone  (screen xs)  - 600px */
 
 @media  screen and (max-width: 700px) {
 
+
     /* FOOTER */
     .played-icon{
         display: flex;
@@ -36,18 +37,20 @@ phone  (screen xs)  - 600px */
 
 @media  screen and (max-width: 600px) {
 
+
     /* SIDEBAR */
     :root{
-        --aside-dimension: 30px;
+        --aside-dimension: 60px;
     }
 
-    #sidebar .logo img:first-of-type,
-    #sidebar span,
-    #sidebar .playlist-nav{
+    #sidebar-top .logo img:first-of-type,
+    #sidebar-top span,
+    #sidebar-bottom a,
+    #sidebar-top .playlist-nav{
         display: none;
     }
 
-    #sidebar .logo img:nth-of-type(2){
+    #sidebar-top .logo img:nth-of-type(2){
         display: block;
         /* DEBUG */
         width: 50px;

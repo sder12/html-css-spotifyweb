@@ -5,24 +5,21 @@
 .aside-main-flex {
   display: flex;
 }
-
 aside {
   width: var(--aside-dimension);
   height: calc(100vh - var(--footer-heigth));
   overflow: hidden;
-  /* DEBUG */
-  background-color: lightgray;
+  padding: 1em 1.4em;
+  background-color: black;
 }
-
 main {
   width: calc(100% - var(--aside-dimension));
   height: calc(100vh - var(--footer-heigth));
   overflow-y: scroll;
-  /* DEBUG */
-  background-color: lightblue;
+  background-color: black;
 }
-
 footer {
+  width: 100%;
   height: var(--footer-heigth);
   background-color: var(--player-color);
 }
@@ -40,12 +37,10 @@ main {
   width: calc(100% - var(--aside-dimension));
   z-index: 999;
   background-color: var(--upgrade-color);
-  padding-right: 2em;
+  padding-right: 1rem;
 }
-
 #main-nav {
   margin-top: var(--upgrade-height);
-  /* DEBUG */  
   background-color: var(--main-color);
 }
 
@@ -67,15 +62,20 @@ main {
 
 /* -------------------------------- */
 /* SIDEBAR */
-aside {
-  position: relative;
+#sidebar{
+  height: 100%;
+}
+#sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
 }
 
-aside #sidebar-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: aqua;
+#sidebar-top div{
+  margin-bottom: 2em;
+}
+#sidebar .logo img:nth-of-type(1){
+ width: calc((var(--aside-dimension)) / 2);
 }
 #sidebar .logo img:nth-of-type(2) {
   display: none;
@@ -86,6 +86,68 @@ aside #sidebar-bottom {
 #sidebar .user img {
   height: 20px;
 }
+
+
+/* Typo */
+#sidebar-top .side-nav ul li,
+#sidebar-top .playlist-nav ul li{
+  line-height: 1.8rem;
+}
+#sidebar li span,
+#sidebar .playlist-nav li,
+#sidebar-bottom .install a {
+  color: var(--side-grey-txt);
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+#sidebar-top .playlist-nav li h3,
+#sidebar-top .side-nav .w-home,
+#sidebar-bottom .user a,
+#sidebar-bottom .install i{
+  color: white;
+}
+
+#sidebar-top .playlist-nav ul li a span{
+  background-color: var(--side-grey-txt);
+  padding: 5px;
+  color: black;
+}
+
+/* Sider Bottom */
+#sidebar-bottom .user img{
+  background-color: var(--side-grey-txt);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+#sidebar-bottom .install i{
+  font-size: .7rem;
+  border-radius: 50%;
+  border: var(--white-border);
+  padding: .5em;
+}
+#sidebar-bottom .install{
+  padding-bottom: .5em;
+  border-bottom: var(--white-border);
+}
+
+#sidebar-bottom .user img,
+#sidebar-bottom .user a{
+  vertical-align: middle;
+}
+
+#sidebar-bottom .user a{
+  font-size: .7rem;
+}
+#sidebar-bottom {
+  margin-bottom: 1em;
+}
+#sidebar-bottom .user{
+  margin-top: .5em;
+}
+
 /* -------------------------------- */
 /* MAIN ------------*/
 /* UPGRADE */
@@ -205,9 +267,10 @@ aside #sidebar-bottom {
   font-weight: 700;
   font-size: 0.7rem;
 }
-#music-player .hr-player {
+#music-player-bottom a hr{
+  color: white;
   align-self: center;
-  width: 70%;
+  width: 14em;
 }
 #music-player-top .fa-play {
   border: 2px solid white;
@@ -224,5 +287,6 @@ aside #sidebar-bottom {
   margin-right: 1em;
 }
 #played-volume .hr-player {
+  color: white;
   width: 100px;
 }
