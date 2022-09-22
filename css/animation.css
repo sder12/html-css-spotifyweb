@@ -36,10 +36,38 @@ aside{
     text-decoration-color: #ADFF2F ;
     text-underline-position: under;
     text-decoration-thickness: 2px;
-    text-underline-offset: 2px;    
+    text-underline-offset: 3px;    
 }
 
 /* cover */
+.cover{
+    position:relative;
+}
+.overlay{
+    position: absolute;   
+    top: 20%;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    font-size: 4.4rem; 
+    opacity: 0;
+    transition: .2s linear;    
+}
+
+#recently-played .cover:first-child:hover .overlay,
+#recently-played .cover:nth-of-type(2):hover .overlay,
+#recently-played .cover:nth-of-type(3):hover .overlay,
+#recently-played .cover:nth-of-type(4):hover .overlay,
+#recently-played .cover:nth-of-type(5):hover .overlay,
+#recently-played .cover:last-child:hover .overlay, 
+#create-for-u .cover:first-child:hover .overlay,
+#create-for-u .cover:last-child:hover .overlay,
+#popular-artist .cover:first-child:hover .overlay,
+#popular-artist .cover:last-child:hover .overlay{
+    opacity: 1;  
+}
+
+
 #recently-played .cover:first-child:hover img,
 #recently-played .cover:nth-of-type(2):hover img,
 #recently-played .cover:nth-of-type(3):hover img,
@@ -50,8 +78,7 @@ aside{
 #create-for-u .cover:last-child:hover img,
 #popular-artist .cover:first-child:hover img,
 #popular-artist .cover:last-child:hover img{
-    filter: grayscale(60%);
-    filter: blur(4px);   
+    filter: grayscale(70%);
 }
 
 
@@ -76,3 +103,6 @@ aside{
 }
 
 
+#music-player-top a:nth-of-type(3):hover .fa-circle-play{
+    transform: scale(1.2);
+}

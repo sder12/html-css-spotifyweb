@@ -111,7 +111,7 @@ main {
 
 #sidebar-top .playlist-nav ul li a span{
   background-color: var(--side-grey-txt);
-  padding: 5px;
+  padding: 3px 7px;
   color: black;
 }
 
@@ -313,10 +313,8 @@ main {
   align-self: center;
   width: 14em;
 }
-#music-player-top .fa-play {
-  border: 2px solid white;
-  border-radius: 50%;
-  padding: 0.7em;
+#music-player-top .fa-circle-play {
+  font-size: 2rem;
 }
 
 /* Footer Right Played Volume */
