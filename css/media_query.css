@@ -1,59 +1,72 @@
-/* I breakpoint:
-small desktop (screen md) - 1100px
-tablet  (screen s)  - 700px
-phone  (screen xs)  - 600px */
+/* Small desktop (screen md) - 1100px------------*/
 
-@media  screen and (max-width: 700px) {
-
-
-    /* FOOTER */
-    .played-icon{
-        display: flex;
-        flex-direction: column;
-        gap: .3em;
-    }
-    #played-song img {
-        height: 40px;
-      }
-    #music-player-bottom {
-        justify-content: center;
-        gap: 1em;
-      }
-    #music-player .hr-player {
-        width: 50%;        
-      }
-      #music-player i {
-        margin: 0 .2em;
-      }
-
-    #played-volume i {
-        margin-right: .3em;
-      }
-
-    #played-volume .hr-player{
-        width: 60px;
-    }
+@media screen and (max-width: 1100px) {
+  /* COVER */
+  .col {
+    flex-wrap: wrap;
+  }
+  .col .cover {
+    width: calc(90% / 4);
+  }
 }
 
-@media  screen and (max-width: 600px) {
+/* Tablet  (screen s)  - 700px---------------------- */
+@media screen and (max-width: 700px) {
+  /* COVER */
+  .col .cover {
+    width: calc(90% / 2);
+  }
 
+  /* FOOTER */
+  .played-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  #played-song img {
+    height: 40px;
+  }
+  #music-player-bottom {
+    justify-content: center;
+    gap: 1em;
+  }
+  #music-player .hr-player {
+    width: 50%;
+  }
+  #music-player i {
+    margin: 0 0.2em;
+  }
 
-    /* SIDEBAR */
-    :root{
-        --aside-dimension: 60px;
-    }
+  #played-volume i {
+    margin-right: 0.3em;
+  }
 
-    #sidebar-top .logo img:first-of-type,
-    #sidebar-top span,
-    #sidebar-bottom a,
-    #sidebar-top .playlist-nav{
-        display: none;
-    }
+  #played-volume .hr-player {
+    width: 60px;
+  }
+}
 
-    #sidebar-top .logo img:nth-of-type(2){
-        display: block;
-        /* DEBUG */
-        width: 50px;
-    }    
-    
+/* Phone  (screen xs)  - 600px --------------------*/
+@media screen and (max-width: 600px) {
+  /* SIDEBAR */
+  :root {
+    --aside-dimension: 60px;
+  }
+
+  #sidebar-top .logo img:first-of-type,
+  #sidebar-top span,
+  #sidebar-bottom a,
+  #sidebar-top .playlist-nav {
+    display: none;
+  }
+
+  #sidebar-top .logo img:nth-of-type(2) {
+    display: block;
+    /* DEBUG */
+    width: 50px;
+  }
+
+  #sidebar-bottom .install{  
+    border-bottom: 0;
+  }
 }
