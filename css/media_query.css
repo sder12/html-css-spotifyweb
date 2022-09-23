@@ -8,6 +8,11 @@
   .col .cover {
     width: calc(90% / 4);
   }
+  /* FOOTER */
+  #music-player{
+    width: 40%;
+    
+  }
 }
 
 /* Tablet  (screen s)  - 700px---------------------- */
@@ -44,6 +49,11 @@
   #played-volume .hr-player {
     width: 60px;
   }
+
+  /* FOOTER */
+    #music-player{
+      width: 50%;
+    }
 }
 
 /* Phone  (screen xs)  - 600px --------------------*/
@@ -51,6 +61,7 @@
   /* SIDEBAR */
   :root {
     --aside-dimension: 60px;
+    --footer-lateral: 100px;
   }
 
   #sidebar-top .logo img:first-of-type,
@@ -69,4 +80,12 @@
   #sidebar-bottom .install{  
     border-bottom: 0;
   }
+
+    /* FOOTER */
+    #music-player{
+      width: 45%;
+    }
+
+ 
+   
 }

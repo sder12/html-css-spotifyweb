@@ -124,14 +124,15 @@ main {
 }
 
 #sidebar-bottom .install i{
+  color:  var(--side-grey-txt);
   font-size: .7rem;
   border-radius: 50%;
-  border: var(--white-border);
+  border: 1px solid  var(--side-grey-txt);
   padding: .5em;
 }
 #sidebar-bottom .install{
   padding-bottom: .5em;
-  border-bottom: var(--white-border);
+  border-bottom: 1px solid var(--main-grey-txt);
 }
 
 #sidebar-bottom .user img,
@@ -256,18 +257,19 @@ main {
 /* -------------------------------- */
 /* FOOTER - CTA*/
 
-
 #call-to-action {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.4em;
 }
+
 /* Footer Left Played song */
 #played-song {
+  width: var(--footer-lateral);
+  height: var(--footer-heigth);
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.2em;
 }
 #played-song img {
   height: 60px;
@@ -288,6 +290,22 @@ main {
 }
 
 /* Footer Center Music Player */
+#music-player{
+  height: var(--footer-heigth);
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  gap: .5em;
+}
+#music-player-top{
+  align-self: center;
+}
+#music-player-top{
+  display: flex;
+  align-items: center;
+}
+
 #music-player i,
 #played-volume i,
 #played-song .played-text span:first-of-type {
@@ -299,36 +317,80 @@ main {
 #music-player i {
   margin: 0 0.4em;
 }
+#music-player-top .fa-circle-play {
+  font-size: 2rem;
+}
+
+/* Bottom */
 #music-player-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #music-player-bottom span {
   color: white;
   font-weight: 700;
   font-size: 0.7rem;
 }
-#music-player-bottom a hr{
-  color: white;
-  align-self: center;
-  width: 14em;
+
+
+/* Line-player */
+#music-player-bottom .line-player,
+#music-player-bottom .line-player .line-player-inner{
+  border-radius: 3px;
+  height: 5px;
 }
-#music-player-top .fa-circle-play {
-  font-size: 2rem;
+#music-player-bottom .line-player{
+  background-color: var(--main-grey-txt);  
+  width: 80%; 
+  position: relative;
 }
+
+#music-player-bottom .line-player-inner{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: white;
+  width: 20%;
+}
+
+
 
 /* Footer Right Played Volume */
 #played-volume {
   height: var(--footer-heigth);
   line-height: var(--footer-heigth);
+  width: var(--footer-lateral);
+  display: flex;
+  align-items: center;
 }
 #played-volume i {
   margin-right: 1em;
 }
-#played-volume .hr-player {
-  color: white;
-  width: 100px;
+
+/* Line Player + Volume */
+
+#played-volume .line-player,
+#played-volume  .line-player .line-player-inner{
+  border-radius: 3px;
+  height: 5px;
 }
+#played-volume .line-player{  
+  background-color: var(--main-grey-txt);  
+  width: 50%; 
+  position: relative;
+}
+#played-volume  .line-player .line-player-inner{ 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: white;
+  width: 20%;
+}
+
+
 
 
 /* DEBUG */
