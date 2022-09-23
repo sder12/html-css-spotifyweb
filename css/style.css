@@ -353,6 +353,9 @@ main {
   z-index: 9;
   background-color: white;
   width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 
@@ -388,9 +391,20 @@ main {
   z-index: 9;
   background-color: white;
   width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-
+#played-volume  .line-player .line-player-inner::after,
+#music-player-bottom  .line-player .line-player-inner::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: .6em;
+  content: "\f111";
+  color: white;
+  display: none;
+}
 
 
 /* DEBUG */
