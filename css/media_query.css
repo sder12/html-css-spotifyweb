@@ -1,22 +1,26 @@
 /* Small desktop (screen md) - 1100px------------*/
 
 @media screen and (max-width: 1100px) {
+
   /* COVER */
   .col {
     flex-wrap: wrap;
   }
+
   .col .cover {
     width: calc(90% / 4);
   }
+
   /* FOOTER */
-  #music-player{
+  #music-player {
     width: 40%;
-    
+
   }
 }
 
 /* Tablet  (screen s)  - 700px---------------------- */
 @media screen and (max-width: 700px) {
+
   /* COVER */
   .col .cover {
     width: calc(90% / 2);
@@ -28,16 +32,20 @@
     flex-direction: column;
     gap: 0.3em;
   }
+
   #played-song img {
     height: 40px;
   }
+
   #music-player-bottom {
     justify-content: center;
     gap: 1em;
   }
+
   #music-player .hr-player {
     width: 50%;
   }
+
   #music-player i {
     margin: 0 0.2em;
   }
@@ -51,13 +59,14 @@
   }
 
   /* FOOTER */
-    #music-player{
-      width: 50%;
-    }
+  #music-player {
+    width: 50%;
+  }
 }
 
 /* Phone  (screen xs)  - 600px --------------------*/
 @media screen and (max-width: 600px) {
+
   /* SIDEBAR */
   :root {
     --aside-dimension: 60px;
@@ -77,15 +86,13 @@
     width: 50px;
   }
 
-  #sidebar-bottom .install{  
+  #sidebar-bottom .install {
     border-bottom: 0;
   }
 
-    /* FOOTER */
-    #music-player{
-      width: 45%;
-    }
+  /* FOOTER */
+  #music-player {
+    width: 45%;
+  }
 
- 
-   
 }

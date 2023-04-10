@@ -38,6 +38,11 @@ aside{
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;    
 }
+#main-nav ul li .checked-underline::after{
+    position: absolute;
+    height: 2px;
+  width: 30px;
+}
 
 /* cover */
 .cover{

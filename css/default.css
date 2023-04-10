@@ -4,19 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     max-width: 100%;
 }
-html{
-    font-size: 62,5%;
-    font-family: 'Montserrat', sans-serif;;
+
+html {
+    font-size: 62, 5%;
+    font-family: 'Montserrat', sans-serif;
+    ;
 }
 
 /* VARIABLES */
-:root{
+:root {
     /* Default */
     --white-color: #fff;
-    --black-color: #000;   
+    --black-color: #000;
     --black-border: 1px solid black;
     --white-border: 1px solid white;
     /* Colors */
@@ -38,19 +41,21 @@ html{
     --aside-dimension: 200px;
     --upgrade-height: 9vh;
     --footer-heigth: 90px;
-    --footer-lateral: 200px;
+    --footer-lateral: 25%;
 }
 
 
 /* LINK and LIST*/
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-hr{
+
+hr {
     display: inline-block;
 }
 
@@ -58,52 +63,63 @@ hr{
 
 /* SPACING*/
 /* vertical */
-.my-1{
+.my-1 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 .my-2 {
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 /* top */
-.mt-1{
+.mt-1 {
     margin-top: 1em;
 }
-.mt-2{
+
+.mt-2 {
     margin-top: 2em;
 }
-.mt-3{
+
+.mt-3 {
     margin-top: 3em;
 }
-.mt-4{
+
+.mt-4 {
     margin-top: 4em;
 }
-.mt-5{
+
+.mt-5 {
     margin-top: 5em;
 }
-.mt-6{
+
+.mt-6 {
     margin-top: 6em;
 }
 
 /* bottom */
-.mb-1{
+.mb-1 {
     margin-bottom: 1em;
 }
-.mb-2{
+
+.mb-2 {
     margin-bottom: 2em;
 }
-.mb-3{
+
+.mb-3 {
     margin-bottom: 3em;
 }
-.mb-4{
+
+.mb-4 {
     margin-bottom: 4em;
 }
-.mb-5{
+
+.mb-5 {
     margin-bottom: 5em;
 }
-.mt-6{
+
+.mt-6 {
     margin-top: 6em;
 }
 
@@ -111,9 +127,11 @@ hr{
 .p-2 {
     padding: 2em;
 }
+
 .p-3 {
     padding: 3em;
 }
+
 .p-4 {
     padding: 4em;
 }
